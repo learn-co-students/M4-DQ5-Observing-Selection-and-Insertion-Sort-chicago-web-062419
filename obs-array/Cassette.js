@@ -15,6 +15,7 @@ class Cassette {
       if (playingTapes.size === 0) clearInterval(playback)
 
       playingTapes.forEach(tape => {
+        console.log(tape)
         if (tape.isFin()) {
           tape.crescendo()
           playingTapes.delete(tape)
